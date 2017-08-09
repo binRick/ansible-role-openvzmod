@@ -5,19 +5,9 @@ This role contains 2 modules to manage OpenVZ containers:
 - openvz: Manage OpenVZ containers
 - openvz_exec: Execute commands in the OpenVZ container
 
-These modules is still quite immature.  There are many missing features.
-Please file bugs at
-[the GitHub issue tracker](https://github.com/yaegashi/ansible-role-openvzmod/issues).
-
-Ansible Galaxy: [https://galaxy.ansible.com/list#/roles/3900](https://galaxy.ansible.com/list#/roles/3900)
-
 ## Module Options
 
 ### openvz options
-
-If this section doesn't show nicely in Ansible Galaxy Page,
-please refer to equeivalent in
-[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#openvz-options).
 
 > <table border=1 cellpadding=4>
 > <tr>
@@ -465,10 +455,6 @@ please refer to equeivalent in
 
 ### openvz_exec options
 
-If this section doesn't show nicely in Ansible Galaxy Page,
-please refer to equeivalent in
-[the GitHub page](https://github.com/yaegashi/ansible-role-openvzmod#openvz_exec-options).
-
 > <table border=1 cellpadding=4>
 > <tr>
 > <th class="head">parameter</th>
@@ -558,6 +544,3 @@ Some other ideas for possible OpenVZ container management modules:
 
 GPLv3+
 
-## Author Information
-
-[YAEGASHI Takeshi](https://github.com/yaegashi)
