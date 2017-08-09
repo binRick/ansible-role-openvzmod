@@ -95,9 +95,9 @@ options:
     ipdel:
         description:
         - Parameter passed to C(vzctl set --ipdel).
-    iptables:
+    netfilter:
         description:
-        - Parameter passed to C(vzctl set --iptables).
+        - Parameter passed to C(vzctl set --netfilter).
     kmemsize:
         description:
         - UBC parameter passed to C(vzctl set --kmemsize).
@@ -253,7 +253,7 @@ SET_PARAMS = set((
     'cpumask', 'nodemask', 'diskspace', 'diskinodes', 'quotatime',
     'quotaugidlimit', 'mount_opts', 'capability', 'netif', 'netif_add',
     'netif_del', 'applyconfig', 'features', 'name', 'description', 'ioprio',
-    'iolimit', 'iopslimit', 'iptables', 'disabled'
+    'iolimit', 'iopslimit', 'netfilter', 'disabled'
 ))
 
 UBC_PARAMS = set((
@@ -460,7 +460,4 @@ def main():
 from ansible.module_utils.basic import *
 
 if __name__ == '__main__':
-    if 'ansible.module_utils.basic' in sys.modules.keys():
-        maint() # Run locally for the maintenance
-    else:
-        main()  # Run as a module
+    main()  # Run as a module
